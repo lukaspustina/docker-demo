@@ -7,7 +7,7 @@ The demo is controlled by a `Makefile`. Please have a look at this `Makefile` to
 Have fun with lightweight virtual machines made simple with Docker and
  feel free to contact me.
 
-## Prerequisites ## 
+## Prerequisites ##
 
 Docker builds upon [Linux Containers][lxc] (LXC) and thus, only runs on Linux. In order to allow you to also play with Docker on non-Linux machines, there are two ways to run this demo, i.e., inside a [Vagrant Box][vagrant] or directly on Linux. Please see the respective subsections below.
 
