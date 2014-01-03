@@ -1,6 +1,6 @@
 # Docker Demo #
 
-This demo gives a brief introduction into [Docker][docker]. Please see my [blog post][cc-blog] for details. The demo starts 10 Python web servers as individual containers and then connects to each of them querying the index page. These containers are completely isolated from each other and run, like virtual machines, with their own file systems and IP address.
+This demo gives a brief introduction into [Docker][docker]. Please see my [blog post][cc-blog] for details. The demo starts 100 Python web servers as individual containers and then connects to each of them querying the index page. These containers are completely isolated from each other and run, like virtual machines, with their own file systems and IP address.
 
 The demo is controlled by a `Makefile`. Please have a look at this `Makefile` to see the different Docker commands used. Also have a look at the `Dockerfile`s used to build the Docker images in `python/Dockerfile` and `webserver/Dockerfile`.
 
@@ -9,11 +9,11 @@ Have fun with lightweight virtual machines made simple with Docker and
 
 ## Prerequisites ##
 
-Docker builds upon [Linux Containers][lxc] (LXC) and thus, only runs on Linux. In order to allow you to also play with Docker on non-Linux machines, there are two ways to run this demo, i.e., inside a [Vagrant Box][vagrant] or directly on Linux. Please see the respective subsections below.
+Docker builds upon [Linux Containers][lxc] (LXC) and thus, only runs on Linux. In order to allow you to also play with Docker on non-Linux machines, there are two ways to run this demo, i.e., inside a [Vagrant Box][vagrant] or directly on Linux. Please see the respective subsections below. For both cases you need to install `make`.
 
 ### Vagrant Box ###
 
-If you decide to run the demo inside a Vagrant box, please install Vagrant accordingly. The supplied Vagrantfile requires Vagrant version 1.4.0 or higher, because starting from that version Docker can be automatically installed. Once Vagrant is installed, just run
+If you decide to run the demo inside a Vagrant box, please install Vagrant accordingly. The supplied Vagrantfile requires Vagrant version 1.4.0 or higher, because starting from that version Docker can be automatically installed. As provider, VirtualBox is assumed. Once Vagrant is installed, just run
 > `vagrant up; vagrant ssh`   
 > `cd /vagrant`
 
