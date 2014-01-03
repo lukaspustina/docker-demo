@@ -13,8 +13,10 @@ Vagrant.configure("2") do |config|
   config.vm.hostname = "#{BOX_NAME}.localdomain"
   config.vm.provider :virtualbox do |vbox|
     vbox.name = BOX_NAME
+    vbox.memory = 1024
   end
 
   config.vm.provision "docker", version: "0.7.1"
+  config.vm.provision :shell, :inline => "mkdir -p /var/lib/cloud/instance; touch /var/lib/cloud/instance/locale-check.skip"
 end
 

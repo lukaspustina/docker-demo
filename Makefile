@@ -1,5 +1,5 @@
 LOGDIR=logs
-NUM_OF_SERVERS=10
+NUM_OF_SERVERS=100
 
 all:
 	@echo "make build -- build docker images"
