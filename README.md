@@ -32,7 +32,7 @@ In the first step, two Docker images are build. First, starting from an Ubuntu b
 
 ### 2. Starting containers ###
 
-In the second step, a number of LXC containers is started; by default 10.
+In the second step, a number of LXC containers is started; by default 100.
 > `make run`
 
 You can overwrite the number of server containers to start:
