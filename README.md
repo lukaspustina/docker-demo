@@ -48,6 +48,13 @@ For each container you will get an output similar to this example, where three c
 > Hello 172.17.42.1, I am 172.17.0.53.  
 > Hello 172.17.42.1, I am 172.17.0.52. 
 
+After running the demo once, log files from each conainter will be
+stored in the directory `logs` where you can see, that each container
+was accessed. The logs are generated from inside the containers, using
+their individual IP address as log file name.
+
+You can re-run the demo multiple times.
+
 #### Show Running Containers ####
 
 If you want to see the number of running containers, run
