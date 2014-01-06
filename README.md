@@ -69,7 +69,7 @@ and to clean up run
 > `make clean`
 
 [docker]: http://docker.io
-[cc-blog]: http://www.codecentric.de
+[cc-blog]: https://blog.codecentric.de/en/2014/01/lightweight-virtual-machines-made-simple-docker-run-100-virtual-maschines/
 [lxc]: http://linuxcontainers.org/
 [vagrant]: http://www.vagrantup.com
 [docker-install-doc]: http://docs.docker.io/en/latest/installation/
