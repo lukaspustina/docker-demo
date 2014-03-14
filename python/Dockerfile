@@ -4,5 +4,5 @@ FROM ubuntu:quantal
 
 MAINTAINER Lukas Pustina <lukas.pustina@centerdevice.com>
 
-RUN apt-get install -y python
+RUN apt-get update && apt-get install -y python
 
