@@ -1,6 +1,6 @@
 # Dockerfile for simple python webserver
 # Version 1.0
-FROM docker-demo/python
+FROM docker_demo/python
 
 MAINTAINER Lukas Pustina <lukas.pustina@centerdevice.com>
 
