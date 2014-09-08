@@ -2,7 +2,7 @@
 #######################################################
 #
 # Author: Lukas Pustina
-#         (lukas.pustina [at] centerdevice.com)
+#         (lukas.pustina [at] codecentric.de)
 #
 #########################################################
 #
