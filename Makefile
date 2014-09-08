@@ -18,11 +18,10 @@ build:
 run: $(LOGDIR)
 	@echo "+++ Starting containers +++"
 	@for i in `seq 1 $(NUM_OF_SERVERS)`; do \
-		name=webserver-$$i \
-		docker run -d --cidfile=$</webserver-$$i.cid --name=$$name --hostname=$$name -v `pwd`/$<:/logs lukaspustina/docker_demo_webserver:latest /opt/webserver/run.sh /logs ; \
+		name=webserver-$$i; \
+		container_id=$$(docker run -d --cidfile=$</webserver-$$i.cid --name=$$name --hostname=$$name -v `pwd`/$<:/logs lukaspustina/docker_demo_webserver:latest /opt/webserver/run.sh /logs) ; \
+		docker ps -l | tail -n +2; \
 	done
-	@echo "+++ Running containers +++"
-	@docker ps
 	@sleep 1
 
 demo:
